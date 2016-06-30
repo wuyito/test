@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/app.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header role="banner">
+        <div role="navigation">
+            <!-- mobile display -->
+            <div class="navbar-header clearfix navbar-fixed navbar-dark bg-inverse">
+                <button class="navbar-toggler hidden-sm-up pull-xs-right collapsed" type="button" data-toggle="collapse" data-target="#uknow-collapse-navbar">
+                    &#9776;
+                </button>
+                <button class="hidden-sm-up pull-xs-right navbar-toggler" type="button">
+                    <span class="sr-only">搜尋</span><i class="fa fa-search"></i>
+                </button>
+                <button class="hidden-sm-up pull-xs-right navbar-toggler" type="button">
+                    <span class="sr-only">會員登入</span><i class="fa fa-user"></i>
+                </button>
+                <a class="navbar-brand pull-left hidden-sm-up" href="#">UKNOWiknow</a>
+            </div>
+            <div class="collapse navbar-toggleable-xs text-xs-center" id="uknow-collapse-navbar">
+                <nav class="navbar navbar-dark bg-inverse">
+                    <a class="navbar-brand pull-left hidden-xs-down" href="#">UKNOWiknow</a>
+                    <ul class="nav navbar-nav nav-inline">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">所有課程 <span class="sr-only">(current)</span></a>
+                            <!--li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                          </ul-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">廚藝學院</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">一對一教學</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">課堂筆記</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-main pull-sm-right hidden-xs-down">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span class="sr-only">會員登入</span><i class="fa fa-user fa-lg"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span class="sr-only">搜尋</span><i class="fa fa-search fa-lg"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="navbar navbar-full text-sm-center text-xs-left navbar-light bg-faded">
+                    <ul class="nav navbar-nav navbar-main">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">廚藝教室 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="dropdownMenu" class="nav-link dropdown-toggle app-nav-dropdown" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">親子遊藝 <span class="caret"></span></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                <a href="" class="dropdown-item">二到六歲</a>
+                                <a href="" class="dropdown-item">六歲以上</a>
+                                <a href="" class="dropdown-item">父母專區</a>
+                                <a href="" class="dropdown-item">親子共學</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">玩樂體驗</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">週休二日</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">設計手作</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">職場應用</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">創業電商</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">公益</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">待用課程</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">其它</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- main content -->
+    <div class="main m-y-3">
+        <div class="container m-b-3">
+            <h1>購課清單</h1>
+        </div>
+        <section id="cart-list">
+            <div class="container">
+                <h3>課程</h3>
+                <div class="table">
+                    <form action="">
+                        <table class="table table-style">
+                            <tbody>
+                                <tr>
+                                    <td class="text-left vert-align" style="min-width:100px;">
+                                        <a href="course.html"><img src="http://placehold.it/150x100/f4f4f4/" alt="classes" title="classes" class="img-thumbnail" data-pin-nopin="true"></a>
+                                    </td>
+                                    <td>
+                                        <div class="row">
+                                            <div class="col-md-5 vert-align">
+                                                <h4 class="card-title"><a href="course.html">英國傳統聖誕節套餐</a><br><small>全系列課程</small></h4>
+                                                <small class="text-muted">台北市信義路四段184號9樓（近信義安和2號出口）<br>2015/12/30-2/16-3/2</small>
+                                            </div>
+                                            <div class="col-md-4 vert-align">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#courseModal" data-content="test01">課前問卷 <i class="fa fa-circle-o" aria-hidden="true"></i></button>
+                                            </div>
+                                            <div class="col-md-2 vert-align">早鳥優惠</div>
+                                            <div class="col-md-1 vert-align">NT$4000</div>
+                                        </div>
+                                    </td>
+                                    <td class="text-xs-right">
+                                        <button type="button" class="btn btn-link">X</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left vert-align" style="min-width:100px;">
+                                        <a href="course.html"><img src="http://placehold.it/150x100/f4f4f4/" alt="classes" title="classes" class="img-thumbnail" data-pin-nopin="true"></a>
+                                        <br>
+                                        <button type="button" class="btn btn-link text-primary">加購同系列不同時段課程</button>
+                                    </td>
+                                    <td>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <h4 class="card-title"><a href="course.html">英國傳統聖誕節套餐</a><br><small>全系列課程</small></h4>
+                                                <small class="text-muted">台北市信義路四段184號9樓（近信義安和2號出口）<br>2015/12/30-2/16-3/2</small>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <button type="button" class="btn btn-success-outline" data-toggle="modal" data-target="#courseModal" data-content="test02">課前問卷 <i class="fa fa-check" aria-hidden="true"></i></button>
+                                            </div>
+                                            <div class="col-md-2">早鳥優惠</div>
+                                            <div class="col-md-1">NT$4000</div>
+                                        </div>
+                                    </td>
+                                    <td class="text-xs-right">
+                                        <button type="button" class="btn btn-link">X</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td class="font-weight-bold">課程總計</td>
+                                    <td colspan="2" class="text-xs-right"><strong class="text-primary">NT$3330</strong>
+                                        <p><a href="#" class="text-muted">即日起購買票課程即可享九五折優惠</a></p>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </form>
+                    <div class="modal fade" id="courseModal" tabindex="-1" role="dialog" aria-labelledby="courseModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content p-y-1 p-x-3">
+                                <div class="modal-header p-x-0">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h2 class="modal-title" id="courseModalLabel">課前問卷</h2>
+                                    <p>請填寫課前問卷</p>
+                                </div>
+                                <div class="modal-body p-x-0">
+                                    <form>
+                                        <fieldset class="form-group">
+                                            <label for="exform-text" class="form-control-label">客製化表單</label>
+                                            <input type="text" class="form-control" id="exform-text" placeholder="INPUT TEXT">
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <label for="exform-select" class="form-control-label">客製化下拉式選單</label>
+                                            <select class="form-control" id="exform-select">
+                                                <option>SELECT OPTION -01</option>
+                                                <option>SELECT OPTION -02</option>
+                                            </select>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <label for="exform-checkbox" class="form-control-label">客製化複選</label>
+                                            <div class="checkbox">
+                                                <label for="exform-checkbox-1">
+                                                    <input type="checkbox" name="exform-checkbox-1"> 複選CHECKBOX -01
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label for="exform-checkbox-2">
+                                                    <input type="checkbox" name="exform-checkbox-2"> 複選CHECKBOX -02
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <label for="exform-radio" class="form-control-label">客製化單選</label>
+                                            <div class="checkbox">
+                                                <label for="exform-radio-1">
+                                                    <input type="checkbox" name="exform-radio-1"> 單選RADIO -01
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label for="exform-radio-2">
+                                                    <input type="checkbox" name="exform-radio-2"> 單選RADIO -02
+                                                </label>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <label for="exform-textarea" class="form-control-label">客製化表單</label>
+                                            <textarea class="form-control" id="exform-textarea" placeholder="TEXTAREA" row="5"></textarea>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="modal-footer p-x-0 text-xs-left">
+                                    <div class="row">
+                                        <div class="col-sm-3 col-xs-6">
+                                            <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">取消</button>
+                                        </div>
+                                        <div class="col-sm-4 col-xs-6">
+                                            <button type="button" class="btn btn-primary btn-block">填寫完成</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cart-total" class="m-y-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <!-- 如果有加購 -->
+                        <h3>隨堂加購</h3>
+                        <table class="table table-style m-b-3">
+                            <tbody>
+                                <tr>
+                                    <td class="text-left vert-align" style="max-width:70px;">
+                                        <img src="http://placehold.it/100x140/f4f4f4/" alt="add" title="add" class="img-thumbnail" data-pin-nopin="true">
+                                    </td>
+                                    <td>
+                                        <h4 class="m-b-3">《數位行銷關鍵》</h4>
+                                        <p class="text-info">作者：王大明</p>
+                                        <p class="text-info">出本社：創業電商</p>
+                                    </td>
+                                    <td class="text-xs-right">
+                                        <p><span class="text-primary">加購優惠</span>
+                                            <br><small class="font-line text-muted">NT$340</small> <span class="lead">NT$300</span></p>
+                                        <button type="button" class="btn btn-primary"> 加購 </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- end 加購 -->
+                        <h3>折扣優惠</h3>
+                        <div class="form-group row m-b-2">
+                            <label for="coupon" class="col-sm-12 control-label">您有購課金400元</label>
+                            <div class="col-md-5 col-xs-10">
+                                <input type="text" class="form-control" id="coupon" placeholder="請輸入序號">
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <input type="submit" class="btn btn-primary btn-block" value="送出">
+                            </div>
+                        </div>
+                        <div class="form-group row m-b-2">
+                            <label for="voucher" class="col-sm-12 control-label">電子禮券</label>
+                            <div class="col-md-5 col-xs-10">
+                                <input type="text" class="form-control" id="voucher" placeholder="請輸入序號">
+                            </div>
+                            <div class="col-md-2 col-xs-2">
+                                <input type="submit" class="btn btn-primary btn-block" value="送出">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col-xs-12 bg-inverse p-b-3">
+                            <ul class="list-group list-unstyled">
+                                <li class="list-group-item">
+                                    <h3 class="list-group-item-heading">總計</h3></li>
+                                <li class="list-group-item">
+                                    <p class="list-group-item-text">課程總計<span class="pull-xs-right">NT$40000</span></p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="list-group-item-text">隨堂加購<span class="pull-xs-right">NT$200</span>
+                                        <br>《數位行銷關鍵》</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <hr class="label-default">
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="list-group-item-text">購課金折抵<span class="pull-xs-right">-NT$50</span></p>
+                                </li>
+                                <li class="list-group-item">
+                                    <p class="list-group-item-text">課程邀請<span class="pull-xs-right">-NT$2000</span></p>
+                                </li>
+                                <li class="list-group-item">
+                                    <hr class="label-default">
+                                    <p class="list-group-item-text">總額<span class="pull-xs-right">NT$12300</span></p>
+                                    <hr class="label-default">
+                                </li>
+                                <li class="list-group-item">
+                                    <button type="submit" class="btn btn-default btn-block btn-sm">下一步</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- main -->
+    <!-- footer -->
+    <footer class="p-t-3 p-b-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 m-b-2">
+                    <div class="clearfix">
+                        <a href="" class="nav-item nav-link text-xs-center">關於好學網</a>
+                        <a href="" class="nav-item nav-link text-xs-center">媒體報導</a>
+                        <a href="" class="nav-item nav-link text-xs-center">我要開課</a>
+                        <a href="" class="nav-item nav-link text-xs-center">教學場地</a>
+                        <a href="" class="nav-item nav-link text-xs-center">包班與團購</a>
+                        <a href="" class="nav-item nav-link text-xs-center">學員的保障</a>
+                    </div>
+                    <div class="clearfix">
+                        <a href="" class="nav-item nav-link text-xs-center">隱私權條款</a>
+                        <a href="" class="nav-item nav-link text-xs-center">使用條款</a>
+                        <a href="" class="nav-item nav-link text-xs-center">常見問題</a>
+                        <a href="" class="nav-item nav-link text-xs-center">網站導覽</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="social-group pull-sm-right text-sm-right text-xs-center">
+                        <a href="" class="social-media">
+                            <i class="fa fa-facebook"></i></a>
+                        <a href="" class="social-media">
+                            <i class="fa fa-google-plus"></i></a>
+                        <a href="" class="social-media">
+                            <i class="fa fa-rss"></i></a>
+                        <div class="clearfix"></div>
+                        <p class="m-t-1"><a href="mailto:" class="social-link">hello@uknowiknow.com.tw</a>
+                            <br> (02)88937723
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright m-t-2 text-xs-center">
+                <p class="pull-sm-left small">©好學-是一種生活態度 2016</p>
+                <p class="pull-sm-right small">常年法律顧問：立勤國際法律事務所 黃沛聲律師</p>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/app.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var owl = $("#course-slider");
+
+        owl.owlCarousel({
+            loop: false,
+            margin: 10,
+            nav: true,
+            navText: ["<span class='fa fa-angle-left'></span>", "<span class='fa fa-angle-right'></span>"],
+            dots: false,
+            responsiveClass: true,
+            responsive: {
+                600: {
+                    items: 2,
+                    loop: true
+                },
+                768: {
+                    items: 3,
+                    loop: true
+                },
+                1000: {
+                    items: 5
+                },
+                1200: {
+                    items: 6
+                },
+                1400: {
+                    items: 8
+                },
+                1600: {
+                    items: 10
+                }
+            }
+
+        });
+
+
+    });
+    </script>
+</body>

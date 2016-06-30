@@ -1,0 +1,21 @@
+{
+  "name": "web-test",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.2",
+    "font-awesome": "fontawesome#^4.5.0",
+    "filament-sticky": "^0.1.6",
+    "owl.carousel": "^2.1.3"
+  }
+}

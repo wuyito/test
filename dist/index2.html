@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    #owl-demo .item {
+        background: #42bdc2;
+        padding: 30px 0px;
+        margin: 5px;
+        color: #FFF;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <header role="banner">
+        <div role="navigation">
+            <!-- mobile display -->
+            <div class="navbar-header clearfix navbar-fixed navbar-dark bg-inverse">
+                <button class="navbar-toggler hidden-sm-up pull-xs-right collapsed" type="button" data-toggle="collapse" data-target="#uknow-collapse-navbar">
+                    &#9776;
+                </button>
+                <button class="hidden-sm-up pull-xs-right navbar-toggler" type="button">
+                    <span class="sr-only">搜尋</span><i class="fa fa-search"></i>
+                </button>
+                <button class="hidden-sm-up pull-xs-right navbar-toggler" type="button">
+                    <span class="sr-only">會員登入</span><i class="fa fa-user"></i>
+                </button>
+                <a class="navbar-brand pull-left hidden-sm-up" href="#">UKNOWiknow</a>
+            </div>
+            <div class="collapse navbar-toggleable-xs text-xs-center" id="uknow-collapse-navbar">
+                <nav class="navbar navbar-dark bg-inverse">
+                    <a class="navbar-brand pull-left hidden-xs-down" href="#">UKNOWiknow</a>
+                    <ul class="nav navbar-nav nav-inline">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">所有課程 <span class="sr-only">(current)</span></a>
+                            <!--li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                          </ul-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">廚藝學院</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">一對一教學</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">課堂筆記</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-main pull-sm-right hidden-xs-down">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span class="sr-only">會員登入</span><i class="fa fa-user fa-lg"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span class="sr-only">搜尋</span><i class="fa fa-search fa-lg"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="navbar navbar-full text-sm-center text-xs-left navbar-light bg-faded">
+                    <ul class="nav navbar-nav navbar-main">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">廚藝教室 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="dropdownMenu" class="nav-link dropdown-toggle app-nav-dropdown" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">親子遊藝 <span class="caret"></span></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                <a href="" class="dropdown-item">二到六歲</a>
+                                <a href="" class="dropdown-item">六歲以上</a>
+                                <a href="" class="dropdown-item">父母專區</a>
+                                <a href="" class="dropdown-item">親子共學</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">玩樂體驗</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">週休二日</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">設計手作</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">職場應用</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">創業電商</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">公益</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">待用課程</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">其它</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- main content -->
+    <div class="main">
+        <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item">
+                <p class='item-text'> 親子游藝</p>
+                <img class="img-thumbnail" src="http://placehold.it/200x120/f4f4f4/000&amp;text=1" alt="">
+                <h4 class="item-title">英國聖誕節傳統大餐</h4></div>
+            <div class="item">
+                <p class='item-text'> 親子游藝</p>
+                <img class="img-thumbnail" src="http://placehold.it/200x120/f4f4f4/000&amp;text=2" alt="">
+                <h4 class="item-title">英國聖誕節傳統大餐</h4></div>
+            <div class="item">
+                <p class='item-text'> 親子游藝</p>
+                <img class="img-thumbnail" src="http://placehold.it/200x120/f4f4f4/000&amp;text=3" alt="">
+                <h4 class="item-title">英國聖誕節傳統大餐</h4></div>
+            <div class="item">
+                <p class='item-text'> 親子游藝</p>
+                <img class="img-thumbnail" src="http://placehold.it/200x120/f4f4f4/000&amp;text=4" alt="">
+                <h4 class="item-title">英國聖誕節傳統大餐</h4></div>
+            <div class="item">
+                <p class='item-text'> 親子游藝</p>
+                <img class="img-thumbnail" src="http://placehold.it/200x120/f4f4f4/000&amp;text=1" alt="">
+                <h4 class="item-title">英國聖誕節傳統大餐</h4></div>
+            <div class="item">
+                <p class='item-text'> 親子游藝</p>
+                <img class="img-thumbnail" src="http://placehold.it/200x120/f4f4f4/000&amp;text=2" alt="">
+                <h4 class="item-title">英國聖誕節傳統大餐</h4></div>
+            <div class="item">
+                <p class='item-text'> 親子游藝</p>
+                <img class="img-thumbnail" src="http://placehold.it/200x120/f4f4f4/000&amp;text=3" alt="">
+                <h4 class="item-title">英國聖誕節傳統大餐</h4></div>
+            <div class="item">
+                <p class='item-text'> 親子游藝</p>
+                <img class="img-thumbnail" src="http://placehold.it/200x120/f4f4f4/000&amp;text=4" alt="">
+                <h4 class="item-title">英國聖誕節傳統大餐</h4></div>
+            <div class="item">
+                <p class='item-text'> 親子游藝</p>
+                <img class="img-thumbnail" src="http://placehold.it/200x120/f4f4f4/000&amp;text=1" alt="">
+                <h4 class="item-title">英國聖誕節傳統大餐</h4></div>
+            <div class="item">
+                <p class='item-text'> 親子游藝</p>
+                <img class="img-thumbnail" src="http://placehold.it/200x120/f4f4f4/000&amp;text=2" alt="">
+                <h4 class="item-title">英國聖誕節傳統大餐</h4></div>
+            <div class="item">
+                <p class='item-text'> 親子游藝</p>
+                <img class="img-thumbnail" src="http://placehold.it/200x120/f4f4f4/000&amp;text=3" alt="">
+                <h4 class="item-title">英國聖誕節傳統大餐</h4></div>
+            <div class="item">
+                <p class='item-text'> 親子游藝</p>
+                <img class="img-thumbnail" src="http://placehold.it/200x120/f4f4f4/000&amp;text=4" alt="">
+                <h4 class="item-title">英國聖誕節傳統大餐</h4></div>
+            
+        </div>
+        <!-- main -->
+        <!-- footer -->
+        <footer class="p-t-3 p-b-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 m-b-2">
+                        <div class="clearfix">
+                            <a href="" class="nav-item nav-link text-xs-center">關於好學網</a>
+                            <a href="" class="nav-item nav-link text-xs-center">媒體報導</a>
+                            <a href="" class="nav-item nav-link text-xs-center">我要開課</a>
+                            <a href="" class="nav-item nav-link text-xs-center">教學場地</a>
+                            <a href="" class="nav-item nav-link text-xs-center">包班與團購</a>
+                            <a href="" class="nav-item nav-link text-xs-center">學員的保障</a>
+                        </div>
+                        <div class="clearfix">
+                            <a href="" class="nav-item nav-link text-xs-center">隱私權條款</a>
+                            <a href="" class="nav-item nav-link text-xs-center">使用條款</a>
+                            <a href="" class="nav-item nav-link text-xs-center">常見問題</a>
+                            <a href="" class="nav-item nav-link text-xs-center">網站導覽</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="social-group pull-sm-right text-sm-right text-xs-center">
+                            <a href="" class="social-media">
+                                <i class="fa fa-facebook"></i></a>
+                            <a href="" class="social-media">
+                                <i class="fa fa-google-plus"></i></a>
+                            <a href="" class="social-media">
+                                <i class="fa fa-rss"></i></a>
+                            <div class="clearfix"></div>
+                            <p class="m-t-1"><a href="mailto:" class="social-link">hello@uknowiknow.com.tw</a>
+                                <br> (02)88937723
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright m-t-2 text-xs-center">
+                    <p class="pull-sm-left small">©好學-是一種生活態度 2016</p>
+                    <p class="pull-sm-right small">常年法律顧問：立勤國際法律事務所 黃沛聲律師</p>
+                </div>
+            </div>
+        </footer>
+        <!-- jQuery -->
+        <script src="js/app.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            var owl = $("#owl-demo");
+
+            owl.owlCarousel({
+
+                itemsCustom: [
+                    [600, 2],
+                    [700, 3],
+                    [1000, 4],
+                    [1200, 6],
+                    [1400, 8],
+                    [1600, 10]
+                ],
+                navigation: true
+
+            });
+
+        });
+        </script>
+</body>

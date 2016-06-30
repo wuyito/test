@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+
+
+$font-family-sans-serif: 'Meiryo', '小塚ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Osaka', 'MS PGothic', 'ＭＳ Ｐゴシック', 'ＭＳ ゴシック', 'Roboto', 'Noto Sans TC','Open Sans', sans-serif;
+$font-size-root: 13px;
+$font-size-h3: 1.5rem;
+$font-size-h4: 1.25rem;
+$headings-line-height: 1.5;
+$line-height: 2;
+ 
+$gray-dark:                 #373a3c;
+$gray:                      #55595c;
+$gray-light:                #818a91;
+$gray-lighter:              #eceeef;
+$gray-lightest:             #f7f7f9;
+
+$brand-primary:             #0275d8;
+$brand-success:             #5cb85c;
+$brand-info:                $gray-light;
+$brand-warning:             #f0ad4e;
+$brand-danger:              #d9534f;
+
+
+
+
+$link-color:                 $gray;
+$link-hover-decoration:      none;
+
+$thumbnail-padding:           0;
+$thumbnail-border-width:      0;
+
+
+$dropdown-border-width: 0;
+
+$navbar-padding-y:                  0 !default;
+$navbar-item-padding-y:             0.5rem;
+$navbar-item-padding-x:             1rem;
+$navbar-item-margin-y:              0;
+$navbar-item-margin-x:              0;
+
+$btn-primary-color:              #fff;
+$btn-primary-bg:                 #000;
+$btn-primary-border:             $btn-primary-bg;
+
+$btn-secondary-color:            $gray-dark;
+$btn-secondary-bg:               $gray-lighter;
+$btn-secondary-border:           $gray-lighter ;
+
+
+/*$enable-flex: true;
+*/
+$border-radius: none;
+$enable-transitions: true ;
+
+.carousel {
+  height: 370px;
+}
+
+.carousel-inner {
+  height: 100%;
+
+  > .carousel-item {
+    height: 100%;
+    overflow: hidden;
+
+    // Account for jankitude on images
+    > img,
+    > a > img {
+      @extend .img-fluid;
+      width: 100%;
+    }
+	}
+}

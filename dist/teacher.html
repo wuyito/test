@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/app.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header role="banner">
+        <div role="navigation">
+            <!-- mobile display -->
+            <div class="navbar-header clearfix navbar-fixed navbar-dark bg-inverse">
+                <button class="navbar-toggler hidden-sm-up pull-xs-right collapsed" type="button" data-toggle="collapse" data-target="#uknow-collapse-navbar">
+                    &#9776;
+                </button>
+                <button class="hidden-sm-up pull-xs-right navbar-toggler" type="button">
+                    <span class="sr-only">搜尋</span><i class="fa fa-search"></i>
+                </button>
+                <button class="hidden-sm-up pull-xs-right navbar-toggler" type="button">
+                    <span class="sr-only">會員登入</span><i class="fa fa-user"></i>
+                </button>
+                <a class="navbar-brand pull-left hidden-sm-up" href="#">UKNOWiknow</a>
+            </div>
+            <div class="collapse navbar-toggleable-xs text-xs-center" id="uknow-collapse-navbar">
+                <nav class="navbar navbar-dark bg-inverse">
+                    <a class="navbar-brand pull-left hidden-xs-down" href="#">UKNOWiknow</a>
+                    <ul class="nav navbar-nav nav-inline">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">所有課程 <span class="sr-only">(current)</span></a>
+                            <!--li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                          </ul-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">廚藝學院</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">一對一教學</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">課堂筆記</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-main pull-sm-right hidden-xs-down">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span class="sr-only">會員登入</span><i class="fa fa-user fa-lg"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span class="sr-only">搜尋</span><i class="fa fa-search fa-lg"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="navbar navbar-full text-sm-center text-xs-left navbar-light bg-faded">
+                    <ul class="nav navbar-nav navbar-main">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">廚藝教室 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="dropdownMenu" class="nav-link dropdown-toggle app-nav-dropdown" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">親子遊藝 <span class="caret"></span></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                <a href="" class="dropdown-item">二到六歲</a>
+                                <a href="" class="dropdown-item">六歲以上</a>
+                                <a href="" class="dropdown-item">父母專區</a>
+                                <a href="" class="dropdown-item">親子共學</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">玩樂體驗</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">週休二日</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">設計手作</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">職場應用</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">創業電商</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">公益</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">待用課程</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">其它</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- main content -->
+    <div class="main m-y-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-5">
+                    <div class="thumbnail"><img src="http://placehold.it/230x230/f4f4f4/" alt="" class="img-thumbnail img-circle"></div>
+                </div>
+                <div class="col-md-9 col-xs-7">
+                    <div class="col-sm-3 pull-sm-right text-sm-right">
+                        <button type="button" class="btn btn-secondary-outline btn-sm"><i class="fa fa-heart-o" aria-hidden="true"></i> 收 藏 老 師</button>
+                        <p class="m-t-2">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i> 
+                            <i class="fa fa-twitter" aria-hidden="true"></i> 
+                            <i class="fa fa-weixin" aria-hidden="true"></i> 
+                        </p>
+                    </div>
+                    <h1>無極限的地中海大廚-Marco</h1>
+                    <p class="text-primary adward">學員評選十大名師</p>
+                    <div class="row">
+                        <ul class="list-group list-unstyled col-md-4  col-xs-12">
+                            <li class="list-group-item col-xs-4 text-xs-center"><strong class="gray-right text-full h2">4.6</strong><small>評論</small></li>
+                            <li class="list-group-item col-xs-4 text-xs-center"><strong class="gray-right text-full h2">9</strong><small>收藏</small></li>
+                            <li class="list-group-item col-xs-4 text-xs-center"><strong class="text-full h2">16</strong><small>開課</small></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="m-t-3" id="teacher-des">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>「你知我知好學網」於 2013 年 7 月底上線，是一整合線上報名與實體課程的網路平台，希望成為知識和經驗傳遞的管道。我們將透過提供便利的課程搜尋功能、購課金回饋、值得信任的報名機制與課程篩選制度，滿足更多學習的渴望與需求。</p>
+                        <p>「你知我知」認為每個人都有他想學習的東西和他想達成的目標，因此好學網希望傳達「好學」是一種樂趣十足且正面積極的生活態度，同時我們也鼓勵「知識分享」，主張知識傳遞是充滿回饋與幸福的。</p>
+                        <hr class="m-y-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="teacher-sum">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-4">
+                        <h5>開課領域</h5><a href="category.html">廚藝學院</a></div>
+                    <div class="col-sm-3 col-xs-4">
+                        <h5>學員評論</h5>
+                        <p class="card-text small">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i> （
+                            <a href="category.html">23</a>)</p>
+                    </div>
+                    <div class="col-sm-3 col-xs-4">
+                        <h5>更多資訊</h5><a href="#">FACEBOOK</a></div>
+                </div>
+            </div>
+        </section>
+        <section id="current-course" class="m-y-3">
+            <div class="container">
+                <h3>目前開課</h3>
+                <div class="row">
+                    <div class="col-xs-6 col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-thumbnail" src="http://placehold.it/350x150/f4f4f4/" alt="Card" title="">
+                            <div class="card-block">
+                                <a class="card-link" href="category.html">2015/12/31</a>
+                                <h4 class="card-title"><a href="course.html">英國傳統聖誕節套餐</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-thumbnail" src="http://placehold.it/350x150/f4f4f4/" alt="Card" title="">
+                            <div class="card-block">
+                                <a class="card-link" href="category.html">2015/12/31</a>
+                                <h4 class="card-title"><a href="course.html">英國傳統聖誕節套餐</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-thumbnail" src="http://placehold.it/350x150/f4f4f4/" alt="Card" title="">
+                            <div class="card-block">
+                                <a class="card-link" href="category.html">2015/12/31</a>
+                                <h4 class="card-title"><a href="course.html">英國傳統聖誕節套餐</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-thumbnail" src="http://placehold.it/350x150/f4f4f4/" alt="Card" title="">
+                            <div class="card-block">
+                                <a class="card-link" href="category.html">2015/12/31</a>
+                                <h4 class="card-title"><a href="course.html">英國傳統聖誕節套餐</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-thumbnail" src="http://placehold.it/350x150/f4f4f4/" alt="Card" title="">
+                            <div class="card-block">
+                                <a class="card-link" href="category.html">2015/12/31</a>
+                                <h4 class="card-title"><a href="course.html">英國傳統聖誕節套餐</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-thumbnail" src="http://placehold.it/350x150/f4f4f4/" alt="Card" title="">
+                            <div class="card-block">
+                                <a class="card-link" href="category.html">2015/12/31</a>
+                                <h4 class="card-title"><a href="course.html">英國傳統聖誕節套餐</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-thumbnail" src="http://placehold.it/350x150/f4f4f4/" alt="Card" title="">
+                            <div class="card-block">
+                                <a class="card-link" href="category.html">2015/12/31</a>
+                                <h4 class="card-title"><a href="course.html">英國傳統聖誕節套餐</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-thumbnail" src="http://placehold.it/350x150/f4f4f4/" alt="Card" title="">
+                            <div class="card-block">
+                                <a class="card-link" href="category.html">2015/12/31</a>
+                                <h4 class="card-title"><a href="course.html">英國傳統聖誕節套餐</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="past-course" class="m-y-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h1>2015</h1></div>
+                    <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <ul class="list-group list-unstyled">
+                                    <li class="list-group-item p-y-0"><a href="course.html">育兒補助這樣領，聰明媽咪照過來！精打細算五步驟攻略</a></li>
+                                    <li class="list-group-item p-y-0"><a href="course.html">育兒補助這樣領，聰明媽咪照過來！精打細算五步驟攻略</a></li>
+                                    <li class="list-group-item p-y-0"><a href="course.html">當富人的第二套房變成了社會住宅</a></li>
+                                    <li class="list-group-item p-y-0"><a href="course.html">親子桌遊推薦：《醜娃娃》《德國心臟病》《快手疊杯》《神奇形色牌》《艾麗露的回憶》</a></li>
+                                    <li class="list-group-item p-y-0"><a href="course.html">親子桌遊推薦：《醜娃娃》《德國心臟病》《快手疊杯》《神奇形色牌》《艾麗露的回憶》</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-5">
+                                <ul class="list-group list-unstyled">
+                                    <li class="list-group-item p-y-0"><a href="course.html">當富人的第二套房變成了社會住宅</a></li>
+                                    <li class="list-group-item p-y-0"><a href="course.html">Marco老師華麗冰火五重奏</a></li>
+                                    <li class="list-group-item p-y-0"><a href="course.html">Marco老師華麗冰火五重奏</a></li>
+                                    <li class="list-group-item p-y-0"><a href="course.html">Marco老師華麗冰火五重奏</a></li>
+                                    <li class="list-group-item p-y-0"><a href="course.html">Marco老師華麗冰火五重奏</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"><span class="pull-sm-right col-sm-4 text-sm-right"><a href="" class="text-muted">更多課程 ></a></span></div>
+            </div>
+        </section>
+        <!-- if video -->
+        <section id="video" class="m-b-3">
+            <div class="embed-responsive embed-responsive-21by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ojLgN7wqc5A" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- if viedo end -->
+    </div>
+    <!-- main -->
+    <!-- footer -->
+    <footer class="p-t-3 p-b-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 m-b-2">
+                    <div class="clearfix">
+                        <a href="" class="nav-item nav-link text-xs-center">關於好學網</a>
+                        <a href="" class="nav-item nav-link text-xs-center">媒體報導</a>
+                        <a href="" class="nav-item nav-link text-xs-center">我要開課</a>
+                        <a href="" class="nav-item nav-link text-xs-center">教學場地</a>
+                        <a href="" class="nav-item nav-link text-xs-center">包班與團購</a>
+                        <a href="" class="nav-item nav-link text-xs-center">學員的保障</a>
+                    </div>
+                    <div class="clearfix">
+                        <a href="" class="nav-item nav-link text-xs-center">隱私權條款</a>
+                        <a href="" class="nav-item nav-link text-xs-center">使用條款</a>
+                        <a href="" class="nav-item nav-link text-xs-center">常見問題</a>
+                        <a href="" class="nav-item nav-link text-xs-center">網站導覽</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="social-group pull-sm-right text-sm-right text-xs-center">
+                        <a href="" class="social-media">
+                            <i class="fa fa-facebook"></i></a>
+                        <a href="" class="social-media">
+                            <i class="fa fa-google-plus"></i></a>
+                        <a href="" class="social-media">
+                            <i class="fa fa-rss"></i></a>
+                        <div class="clearfix"></div>
+                        <p class="m-t-1"><a href="mailto:" class="social-link">hello@uknowiknow.com.tw</a>
+                            <br> (02)88937723
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright m-t-2 text-xs-center">
+                <p class="pull-sm-left small">©好學-是一種生活態度 2016</p>
+                <p class="pull-sm-right small">常年法律顧問：立勤國際法律事務所 黃沛聲律師</p>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/app.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var owl = $("#course-slider");
+
+        owl.owlCarousel({
+            loop: false,
+            margin: 10,
+            nav: true,
+            navText: ["<span class='fa fa-angle-left'></span>", "<span class='fa fa-angle-right'></span>"],
+            dots: false,
+            responsiveClass: true,
+            responsive: {
+                600: {
+                    items: 2,
+                    loop: true
+                },
+                768: {
+                    items: 3,
+                    loop: true
+                },
+                1000: {
+                    items: 5
+                },
+                1200: {
+                    items: 6
+                },
+                1400: {
+                    items: 8
+                },
+                1600: {
+                    items: 10
+                }
+            }
+
+        });
+
+
+    });
+    </script>
+</body>

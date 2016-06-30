@@ -1,0 +1,269 @@
+body{
+	letter-spacing:0.07rem;
+}
+h1, h2, h3, h5, h6 {
+  margin-bottom: 1.5rem;
+}
+h3{
+	font-size: $font-size-h3;
+	border-bottom:$border-width solid $gray-lighter;
+	line-height:$line-height;
+}
+
+h3.panel-title{
+	font-size: $font-size-root;
+}
+
+h5{
+	margin-bottom: 0.5rem;
+}
+.hover-dark{
+	background-color: $gray-dark;
+	color: $gray-lightest;
+	border-color: $gray-dark;
+    @include transition(all 500ms);
+}
+
+.link-red{
+	color: $brand-warning;
+}
+.text-primary{
+	color: $brand-primary;
+}
+.text-full{
+	width: 100%;
+	display: block;
+}
+.text-info{
+	margin: 0;
+}
+.font-line{
+	text-decoration: line-through;
+}
+.rate{
+	margin-top: 10px;
+}
+.price{
+	margin-top: 35px;
+}
+.label{
+	font-weight: normal;
+}
+.label-default{
+	background-color: $gray-lighter;
+	color: $gray-dark;
+}
+.form-control-label{
+	padding-left: 0;
+	font-weight: bold;
+}
+
+.btn-default{
+	background: #fff;
+	color: $gray-dark;
+}
+
+#tt{
+	top:0;
+}
+header{
+	border-bottom: $border-width solid $gray-lighter;
+	.navbar{
+		.navbar-nav{
+			display: inline-block;
+		}
+		.navbar-main{
+			@include media-breakpoint-down(xs) {
+				   display: block;
+		  	}
+
+			>.nav-item{
+				@include media-breakpoint-down(xs) {
+				   float: none;
+				   margin: 0;
+				   border-bottom: $border-width solid $gray-lighter;
+			  	}
+			  	.dropdown-menu{
+			  		@include media-breakpoint-down(xs) {
+						float:none;
+						position:static;
+						background-color:transparent;
+					}
+				}
+			}
+		}	
+	}
+	.fixedsticky{
+		top: 59px;
+	}
+	@include media-breakpoint-up(sm) {
+		.dropdown:hover .dropdown-menu {
+			display: block;
+			@include transition(all 500ms);
+		}	
+	}
+}
+
+.bg-faded{
+	background-color: #fff;
+	@include media-breakpoint-down(xs) {
+	   background-color: $gray-lightest;
+  	}
+
+}
+.carousel-control{
+	.fa{
+	    display: inline-block;
+	    position: absolute;
+	    top: 50%;
+	    z-index: 5;
+	}
+}
+#banner-carousel {
+  	height: 370px;
+
+	>.carousel-inner {
+	height: 100%;
+	
+		> .carousel-item {
+	    height: 100%;
+	    overflow: hidden;
+
+		    > img,
+		    > a > img {
+		      width: 100%;
+		    }
+		}
+	}
+}
+.list-unstyled{
+
+	>.list-group-item{
+	border: 0;
+	padding-left:  0;
+	padding-right: 0;	
+	background: transparent;	
+	}	
+}
+.list-group-item{
+	background: transparent;
+}
+.gray-right{
+	border-right: $border-width solid $gray-lighter;
+}
+
+.card{
+	border: 0;
+}
+.card-block{
+	padding-right: 0;
+	padding-left: 0;
+}
+.social-media{
+	border: $border-width solid $gray;
+	border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+	
+    @include hover-focus{
+    	@extend .hover-dark;
+    }
+
+}
+.wrap-border{
+	border: $border-width solid $gray-lighter;
+	padding: 15px;
+}
+
+.ol-list-group{
+	padding-left: 1.5rem;
+}
+.list-group-number{
+	counter-reset:li 0;
+	li{
+		padding-left: 5rem;	
+		&:first-child{
+			&:before{
+				content:'';
+			}
+		}
+		&:before{
+			content:counter(li,decimal-leading-zero);
+			counter-increment:li;
+			
+			position: absolute;
+	    	left: 1rem;
+    	}
+
+		
+	}
+
+}
+
+
+.table-style{
+	tbody{
+		td{
+			border-top: none;
+			border-bottom: $table-border-width solid $table-border-color;
+			vertical-align: middle;
+
+			&:first-child {
+	     		 padding-left: 0;
+	   		 }
+			&:last-child {
+	     		 padding-right: 0;
+	   		 }
+		}
+	}
+}
+.modal-content{
+	border-radius: $border-radius;
+	border: none;
+
+}
+.vert-align{
+	vertical-align: middle;
+}
+
+/* Owl-slider */
+
+    #owl-demo {
+    	.item {
+        margin: 5px;
+        text-align: center;
+        }
+    }
+
+
+
+footer{
+	border-top: $border-width solid $gray-lighter;
+
+	.nav-item{		
+		margin-right: 1.8rem;
+		margin-left: 0;
+		margin-bottom: 0.5rem;
+		@include media-breakpoint-down(xs) {
+			margin: 0;
+			padding: 0.8rem;
+			width: 50%;
+			float: left;
+			border-bottom: $border-width solid $gray-lighter;
+	  	}
+	}
+	.nav-item:nth-of-type(odd){
+		@include media-breakpoint-down(xs) {
+			border-right: $border-width solid $gray-lighter;
+	  	}		
+	}
+	.copyright{
+		p{
+			color: $gray-light;
+		}
+	}
+	
+}
